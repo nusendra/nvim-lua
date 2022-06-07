@@ -26,4 +26,9 @@ return require('packer').startup(function()
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
 	}
+	use 'bronson/vim-trailing-whitespace'
+	use {
+		'nvim-telescope/telescope.nvim',
+		requires = { {'nvim-lua/plenary.nvim'} }
+	}
 end)

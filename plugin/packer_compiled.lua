@@ -89,11 +89,26 @@ _G.packer_plugins = {
     path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["themer.lua"] = {
     config = { "\27LJ\2\nœ\2\0\0\5\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\3=\3\15\2B\0\2\1K\0\1\0\vstyles\14parameter\1\0\1\nstyle\vitalic\20variableBuiltIn\1\0\1\nstyle\vitalic\rvariable\1\0\1\nstyle\vitalic\20functionbuiltin\1\0\1\nstyle\vitalic\rfunction\1\0\0\1\0\1\nstyle\vitalic\1\0\1\16colorscheme\19rose_pine_moon\nsetup\vthemer\frequire\0" },
     loaded = true,
     path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/themer.lua",
     url = "https://github.com/themercorp/themer.lua"
+  },
+  ["vim-trailing-whitespace"] = {
+    loaded = true,
+    path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/vim-trailing-whitespace",
+    url = "https://github.com/bronson/vim-trailing-whitespace"
   }
 }
 
