@@ -1,5 +1,6 @@
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
+	use 'neovim/nvim-lspconfig'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -31,4 +32,9 @@ return require('packer').startup(function()
 		'nvim-telescope/telescope.nvim',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+	use 'sheerun/vim-polyglot'
+	use 'jiangmiao/auto-pairs'
+	use 'tpope/vim-fugitive'
+	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+	use 'prettier/vim-prettier'
 end)

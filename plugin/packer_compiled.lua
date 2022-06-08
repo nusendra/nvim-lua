@@ -69,15 +69,30 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -104,6 +119,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/themer.lua",
     url = "https://github.com/themercorp/themer.lua"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/vim-polyglot",
+    url = "https://github.com/sheerun/vim-polyglot"
+  },
+  ["vim-prettier"] = {
+    loaded = true,
+    path = "/Users/nusendra/.local/share/nvim/site/pack/packer/start/vim-prettier",
+    url = "https://github.com/prettier/vim-prettier"
   },
   ["vim-trailing-whitespace"] = {
     loaded = true,

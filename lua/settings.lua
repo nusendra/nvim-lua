@@ -42,6 +42,12 @@ opt.softtabstop = 2 -- edit as if the tabs are 4 characters wide
 opt.shiftwidth = 2 -- number of spaces to use for indent and unindent
 opt.shiftround = true -- round indent to a multiple of 'shiftwidth'
 
+-- Prettier
+cmd([[
+	let g:prettier#autoformat = 0
+	autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+]])
+
 -- Keymaps
 map("n", "<C-H>", "<C-W><C-H>")
 map("n", "<C-J>", "<C-W><C-J>")
