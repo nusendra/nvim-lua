@@ -2,6 +2,7 @@ require 'settings'
 require 'plugins'
 require 'lsp-config'
 
+require 'nvim-web-devicons'.get_icons()
 require('lualine').setup()
 require('nvim-tree').setup{}
 require('telescope').setup{
