@@ -13,8 +13,10 @@ require('telescope').setup{
 	}
 }
 require('kommentary.config').use_extended_mappings()
-
 require'lspconfig'.tsserver.setup{}
+require("notify").setup({
+  background_colour = "#000000",
+})
 
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()

@@ -43,4 +43,5 @@ return require('packer').startup(function()
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip'
 	use 'b3nj5m1n/kommentary'
+	use 'rcarriga/nvim-notify'
 end)
