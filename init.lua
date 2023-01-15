@@ -14,7 +14,9 @@ require('telescope').setup{
 }
 require('kommentary.config').use_extended_mappings()
 require'lspconfig'.tsserver.setup{}
-require'lspconfig'.vuels.setup{}
+require'lspconfig'.volar.setup{
+  filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
+}
 require("notify").setup({
   background_colour = "#000000",
 })
