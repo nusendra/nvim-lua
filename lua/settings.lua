@@ -60,3 +60,12 @@ map("n", "<C-U>", ":tabnext<CR>")
 map("n", "<C-F>", ":FixWhitespace<CR>")
 map("n", "<C-P>", ":Telescope find_files<CR>")
 map("n", "<C-O>", ":Telescope live_grep<CR>")
+
+-- Fix the overflowed error message / diagnostics
+vim.diagnostic.config({
+  virtual_text = false
+})
+
+-- Show line diagnostics automatically in hover window
+vim.o.updatetime = 250
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
