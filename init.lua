@@ -20,6 +20,7 @@ require'lspconfig'.volar.setup{
 require("notify").setup({
   background_colour = "#000000",
 })
+require'lspconfig'.astro.setup{}
 
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
