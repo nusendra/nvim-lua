@@ -45,4 +45,5 @@ return require('packer').startup(function()
   use 'L3MON4D3/LuaSnip'
 	use 'b3nj5m1n/kommentary'
 	use 'rcarriga/nvim-notify'
+	use 'wuelnerdotexe/vim-astro'
 end)
