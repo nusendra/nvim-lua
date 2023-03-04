@@ -1,6 +1,6 @@
 require 'settings'
 require 'plugins'
-require 'lsp-config'
+local lspconfig = require("lspconfig")
 
 require 'nvim-web-devicons'.get_icons()
 require('lualine').setup()
@@ -13,7 +13,11 @@ require('telescope').setup{
 	}
 }
 require('kommentary.config').use_extended_mappings()
-require'lspconfig'.tsserver.setup{}
+require'lspconfig'.tsserver.setup{
+  on_attach = on_attach,
+  root_dir = lspconfig.util.root_pattern("package.json"),
+  single_file_support = false
+}
 require'lspconfig'.volar.setup{
   filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
 }
@@ -21,6 +25,10 @@ require("notify").setup({
   background_colour = "#000000",
 })
 require'lspconfig'.astro.setup{}
+require'lspconfig'.denols.setup{
+  on_attach = on_attach,
+  root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc")
+}
 
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -68,4 +76,9 @@ cmp.setup {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
   },
+}
+
+-- denols
+vim.g.markdown_fenced_languages = {
+  "ts=typescript"
 }
