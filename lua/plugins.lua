@@ -46,4 +46,8 @@ return require('packer').startup(function()
 	use 'b3nj5m1n/kommentary'
 	use 'rcarriga/nvim-notify'
 	use 'wuelnerdotexe/vim-astro'
+	use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+	})
 end)

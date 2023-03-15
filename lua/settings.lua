@@ -34,6 +34,7 @@ opt.mat = 2 -- how many tenths of a second to blink
 opt.updatetime = 300
 opt.signcolumn = "yes"
 opt.shortmess = "atToOFc" -- prompt message options
+opt.relativenumber = true
 
 -- Tab control
 opt.smarttab = true -- tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
@@ -69,3 +70,4 @@ vim.diagnostic.config({
 -- Show line diagnostics automatically in hover window
 vim.o.updatetime = 250
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+
