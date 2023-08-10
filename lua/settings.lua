@@ -71,3 +71,15 @@ vim.diagnostic.config({
 vim.o.updatetime = 250
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
+-- Grep with Far plugin
+opt.lazyredraw = true            -- improve scrolling performance when navigating through large results
+opt.regexpengine=1        -- use old regexp engine
+opt.ignorecase = true  -- ignore case only when the pattern contains no capital letters
+
+-- shortcut for far.vim find
+-- nnoremap <silent> <Find-Shortcut>  :Farf<cr>
+-- vnoremap <silent> <Find-Shortcut>  :Farf<cr>
+
+-- shortcut for far.vim replace
+-- nnoremap <silent> <Replace-Shortcut>  :Farr<cr>
+-- vnoremap <silent> <Replace-Shortcut>  :Farr<cr>
