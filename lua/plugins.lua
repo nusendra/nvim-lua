@@ -51,4 +51,5 @@ return require('packer').startup(function()
     run = function() vim.fn["mkdp#util#install"]() end,
 	})
   use 'brooth/far.vim'
+	use "lukas-reineke/indent-blankline.nvim"
 end)

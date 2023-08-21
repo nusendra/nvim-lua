@@ -30,6 +30,12 @@ require'lspconfig'.denols.setup{
   root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc")
 }
 
+require("indent_blankline").setup {
+  space_char_blankline = " ",
+  show_current_context = true,
+  show_current_context_start = true,
+}
+
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)

@@ -71,7 +71,7 @@ vim.diagnostic.config({
 vim.o.updatetime = 250
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
--- Grep with Far plugin
--- opt.lazyredraw = true            -- improve scrolling performance when navigating through large results
--- opt.regexpengine=1        -- use old regexp engine
--- opt.ignorecase = true  -- ignore case only when the pattern contains no capital letters
+-- indent-blankline plugin
+vim.opt.list = true
+vim.opt.listchars:append "space:⋅"
+vim.opt.listchars:append "eol:↴"
