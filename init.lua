@@ -13,28 +13,14 @@ require('telescope').setup{
 	}
 }
 require('kommentary.config').use_extended_mappings()
-require'lspconfig'.tsserver.setup{
-  on_attach = on_attach,
-  root_dir = lspconfig.util.root_pattern("package.json"),
-  single_file_support = false
-}
-require'lspconfig'.volar.setup{
-  filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
-}
+require'lspconfig'.tsserver.setup{}
+require'lspconfig'.volar.setup{}
 require("notify").setup({
   background_colour = "#000000",
 })
 require'lspconfig'.astro.setup{}
-require'lspconfig'.denols.setup{
-  on_attach = on_attach,
-  root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc")
-}
 
-require("indent_blankline").setup {
-  space_char_blankline = " ",
-  show_current_context = true,
-  show_current_context_start = true,
-}
+require("ibl").setup()
 
 -- nvim-cmp supports additional completion capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
